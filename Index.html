@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>weather app</title>
+</head>
+<body>
+    <div class="app-wrapper">
+        <header class="header">
+            <img class='app-logo' src='./images/logo.svg' alt='Logo'></img>
+            <div class='header__info'>Погода - api</div>
+        </header>
+        <div class="content">
+            <div class='weather__infs'>
+                <h3 class="weather__city">Город </h3>
+                <div class="weather__info">
+                    <p class="weather__info_temp">Температура</p>
+                    <span class="weather__info_temp-value"></span>
+                </div>
+                <div class="weather__info" >
+                    <p class="weather__info_wind">Скорость ветра</p>
+                    <span class="weather__info_wind-value"></span>
+                </div>
+                <div class="weather__info" >
+                    <p class="weather__info_pres">Давление</p>
+                    <span class="weather__info_pres-value"></span>
+                </div>
+                <div class="weather__info" >
+                    <p class="weather__info_humidity">Влажность</p>
+                    <span class="weather__info_humidity-value"></span>
+                </div>
+                <div class="weather__info_sun">Восход солнца  Закат </div>
+                <div class="weather__info">
+                    <p class="weather__info_description"></p>
+                    <img src= "https://openweathermap.org/img/w/02d.png" class="weather__info_img" alt="img" />
+                </div>
+            </div>    
+            <div class='weather__form'>
+                <form class="weather__form_edit" name="edit">
+                    <input type="text" class='weather__input' name="input" placeholder="Введите ваш город" minlength="2" maxlength="30" required>
+                    <button class="weather__button">Найти</button>
+                </form>
+                <div class='weather__forecaster'></div>
+            </div>    
+        </div>
+    </div>
+    <script type="module" src="./script.js"></script>    
+</body>
+</html>
