@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} 
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+.App {
+    text-align: center;
+}
+body{
+    margin: 0px;
+}
+.app-wrapper{
+    display: block;
+    color: rgb(14, 65, 27);
+    max-width: 920px;
+    height: 100vh;
+    margin: 0 auto;
+}
+@media (prefers-reduced-motion: no-preference) {
+    .app-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  .app-logo {
+      height: 50px;
+      pointer-events: none;
+      margin: 14px;
+      display: flex;
+      align-items: center;
+  }
+  .header{
+      background-color: bisque;
+      min-height: 15vh;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+  }  
+  .header__info{
+    color: rgb(128, 128, 128);
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 26px;
+    font-weight: bolder;
+  }
+  @keyframes App-logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+.content{
+    background-color: cornsilk;
+    display: flex;
+    justify-content: space-between;
+    height: 85vh;
+}
+.weather__infs{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    font-size: 18px;
+}
+.weather__form{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20%;
+}
+.weather__button{
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    min-height: 33px;
+    background-color: rgb(47, 165, 47);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+}  
+.weather__input{
+    border-radius: 5px;
+    width: 100%;
+    min-height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.weather__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.weather__info_img{
+    width: 50px;
+}    
+.weather__form_edit{
+    width: 70%;
+}    
+.weather__forecaster{
+    margin-top: 20px;
+}
